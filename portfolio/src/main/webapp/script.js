@@ -1,4 +1,4 @@
-// Copyright 2020 Google LLC
+// Copyright 2019 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,16 +13,20 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Generates a URL for a random image in the images directory and adds an img
+ * element with that URL to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function randomizeImage() {
+  // The images directory contains 13 images, so generate a random index between
+  // 1 and 13.
+  const imageIndex = Math.floor(Math.random() * 13) + 1;
+  const imgUrl = 'images/stanley-' + imageIndex + '.jpg';
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  const imgElement = document.createElement('img');
+  imgElement.src = imgUrl;
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const imageContainer = document.getElementById('random-image-container');
+  // Remove the previous image.
+  imageContainer.innerHTML = '';
+  imageContainer.appendChild(imgElement);
 }
