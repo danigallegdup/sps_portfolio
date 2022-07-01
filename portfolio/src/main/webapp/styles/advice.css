@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;600;700&display=swap');
+
+#Favorite_Things {
+  box-sizing: border-box;
+  font-size: 100%;
+  height: 150vh;
+  font-family: 'Source Code Pro', monospace;
+}
+
+#Favorite_Things  .container {
+  height: 40%;
+  width: 100%;
+  padding: 1rem 0;
+  display: grid;
+  place-content: center;
+}
+  
+#Favorite_Things .cardsa {    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    pointer-events: none;
+  }
+  
+  #Favorite_Things  .carda {
+    max-width: 25rem;
+    color: #ffffffda;
+    padding: 1.5rem;
+    background-color: #202022;
+    
+    pointer-events: auto;
+    
+    transform: scale(1);
+    opacity: 1;
+    transition: all 150ms ease-in-out; 
+    
+    display: flex;
+    flex-direction: column;
+  }
+  #Favorite_Things  .carda-title {
+      position: relative;}
+      
+  #Favorite_Things  ::before {
+        content: "";
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        box-shadow: inset 0 0 3px #bb86fc;
+        background-color: transparent;
+        
+        position: absolute;
+        right: 0;
+      }
+    
+    
+      #Favorite_Things  .date {
+      color: #bb86fc;
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    #Favorite_Things .description {
+      font-size: 0.9rem;
+    }
+    
+    #Favorite_Things  :nth-child(even) {
+      transform: translateY(8px);
+    }
+    
+    #Favorite_Things  :nth-child(n) {
+      transform: rotate(-2deg);
+    }
+
+    #Favorite_Things .cardsa:hover > .carda:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+#Favorite_Things .cardsa:hover > .carda:not(:hover) {
+  opacity: 0.5;
+}

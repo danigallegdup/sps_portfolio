@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD STARTS -->
+
+<head>
+  <title>Daniela Gallegos Dupuis</title>
+  <!-- META STARTS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Daniela Gallegos Dupuis">
+  <meta property="og:type" content="website">
+  <!-- META ENDS -->
+  <!-- FAVICON -->
+  <link rel="icon" href="./img/logo.png">
+  <!-- STYLES BEGIN -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/interested.css">
+  <link rel="stylesheet" href="./styles/dream.css">
+  <link rel="stylesheet" href="./styles/travel.css">
+  <link rel="stylesheet" href="./styles/advice.css">
+  <script src="scripts/script.js"></script>
+  <!-- Interested -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Dreams -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<!-- HEAD ENDS -->
+<body>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------  DREAM  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id = "Dream">
+    <h1 class="header">
+      <a href="#HOME_PAGE">I can do this.</a>
+		</h1>
+		<div class="titles">
+			<div class="title title-1">
+				<h1>What's</h1>
+			</div>
+			<div class="title title-2">
+				<h1>Your</h1>
+			</div>
+			<div class="title title-3">
+				<h1>Dream?</h1>
+			</div>
+		</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br>
+    <div class="social">
+      <tbody>
+        <tr>
+          <td>
+            <a href="#Intro">
+              <img src="img/new_Icons/scroll.png" alt="resume" style="width:95%;height:80%;"></a>
+          </td>
+      </tbody>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>  
+	</div>
+	<script>
+		TweenMax.staggerFrom(
+			".titles > div",
+			0.8,
+			{
+				x: "-60",
+				ease: Power3.easeInOut,
+				opacity: "0",
+			},
+			2
+		);
+
+		TweenMax.staggerTo(
+			".titles > div",
+			0.8,
+			{
+				x: "60",
+				ease: Power3.easeInOut,
+				delay: 1.2,
+				opacity: "0",
+			},
+			2
+		);
+		TweenMax.staggerFrom(
+			"li",
+			3,
+			{
+				x: "-1600",
+				delay: 4.2,
+				ease: Expo.easeInOut,
+			},
+			0.16
+		);
+
+		TweenMax.staggerTo(
+			"li",
+			2.6,
+			{
+				x: "1600",
+				delay: 6.8,
+				ease: Expo.easeInOut,
+			},
+			0.2
+		);
+
+		var textWrapper = document.querySelector(".header");
+		textWrapper.innerHTML = textWrapper.textContent.replace(
+			/\S/g,
+			"<span class='letter'>$&</span>"
+		);
+
+		anime.timeline().add({
+			targets: ".header .letter",
+			opacity: [0, 1],
+			translateY: [80, 0],
+			translateZ: 0,
+			easing: "easeOutExpo",
+			duration: 2000,
+			delay: (el, i) => 7400 + 40 * i,
+		});
+	</script>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------  Intro --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="Intro">
+    <div class="intro">
+      <div class="hero-image">
+        <br><h1>My Dream is to be an Asset the World. Using technolgy as my magic Wand, I Build to:</h1>
+        <section class="cards-wrapper">
+          <div class="card-grid-space">
+            <div class="num">01</div>
+            <a class="card" 
+            style= "background-image: url(./img/Dream/spark.png);">
+              <div>
+                <h1>Ignight my Inner Spark</h1>
+                <p>create things I wish existed</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-grid-space">
+            <div class="num">02</div>
+            <a class="card"
+            style= "background-image: url(./img/Dream/learn.png);">
+              <div>
+                <h1>Learn and Grow</h1>
+                <p>collaborate, muilt- displinary</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-grid-space">
+            <div class="num">03</div>
+            <a class="card"
+            style= "background-image: url(./img/Dream/helpWorld.png);">
+              <div>
+                <h1>Help the world </h1>
+                <p> global warming, global access to internet and power</p>
+                </div>
+            </a>
+          </div>
+        </section>
+          <div class="social">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="#Profile">
+                    <img src="img/new_Icons/scroll.png" alt="resume" style="width:95%;height:80%;"></a>
+                </td>
+            </tbody>
+          </div>
+          <br><br><br><br>
+      </div>
+      <div id = "Profile">
+        <br><br>
+      <div class="social">
+        <tbody>
+          <tr>
+            <td>
+              <a href="./Daniela's Resume.pdf" target="_blank">
+                <img src="img/lcons/download.png" alt="resume" style="width:95%;height:80%;"></a>
+            </td>
+            <td>
+              <a href="https://www.linkedin.com/in/daniela-gallegos-dupuis-243645205/" target="_blank">
+                <img src="img/lcons/linkedin.png" alt="resume" style="width:95%;height:80%;"></a>
+            </td>
+            <td>
+              <a href="mailto:danigallegdup@gmail.com" target="_blank">
+                <img src="img/lcons/email.png" alt="resume" style="width:95%;height:80%;"></a>
+            </td>
+          </tr>
+        </tbody>
+      </div>
+      <div  class="profile">
+        <img src="./img/professional.png" alt="" class="center">
+      </div>
+      <div class="typewriter">
+        <h1>Daniela Gallegos Dupuis</h1>
+      </div>
+      <p>
+        Hi, I am Dani, a Computer Science student at the University of Victoria.
+        Whether it is writing a simple python program to do my homework, collaborating
+        worldwide, or challenging myself with an open-ended school assignment, computer science
+        opened a whole world of possibilities since Hello World.
+      </p>
+    </div>
+    
+    <div class="social">
+      <tbody>
+        <tr>
+          <td>
+            <a href="#Portfolio">
+              <img src="img/new_Icons/scroll.png" alt="resume" style="width:95%;height:80%;"></a>
+          </td>
+      </tbody>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+  </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------  Portfolio --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="Portfolio">
+    <br><br><br><br>
+    <h1>Portolio</h1>
+    <!-- Schneider Electric -->
+    <div class="social" class="content">
+      <div class="item" id="se">
+        <div class="item_title">
+          <div class="title">Schneider Electric</div>
+          <div class="date"> May - Dec 2022</div>
+          <div class="description">Victoria B.C.</div>
+        </div>
+        <div class="middle_table">
+          <ul>
+            <li>Firmware Engineering Co-op</li>
+            <li>Part of Advanced Metering Team</li>
+            <li>Writing auto-tests using Pytest and executing Manual Tests </li>
+            <li>Trained in Electrical Safety and Basic Lab Work: wiring, assembling cards, exchanging CPU's...ect.</li>
+          </ul>
+          <div class="project_a">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://youtu.be/4EtpkB0cuXE" target="_blank">
+                    <img src="./img/new_Icons/Schneider-Electric-Logo.png" alt="About Schneider Electric "
+                      style="width:90%;height:90%;"></a>
+                </td>
+                <td>
+                  <a href="https://www.se.com/ww/en/product-subcategory/4110-advanced-metering/" target="_blank">
+                    <img src="./img/new_Icons/meter.png" alt="Power Meters" style="width:95%;height:80%;"></a>
+                </td>
+              </tr>
+            </tbody>
+          </div>
+        </div>
+        <p>
+          <button onclick="view_more_less(dots,more, seBtn,se)" id="seBtn">View More</button>
+          <span id="dots"></span><span id="more"> <br><br>
+            I could not have asked for a better first co-op! <br>
+            Being an intern surrounded by professional electrical engineers, some with 10+ experience,
+            has been an incredible opportunity to learn. <br>
+          </span>
+        </p>
+      </div>
+      <!-- WECS  -->
+      <div class="item" id="wecs">
+        <div class="item_title">
+          <div class="title">WECS</div>
+          <div class="date"> Jan 2021 - Present</div>
+          <div class="description"> UVic</div>
+        </div>
+        <div class="middle_table">
+          <ul>
+            <li>Women in Engineering and Computer Science Club at the University of Victoria </li>
+            <li>Check out our Instagram</li>
+            <li>Join our Discord Server</li>
+            <li>Have any questions? Shoot us an Email </li>
+          </ul>
+          <div class="project_a">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://www.instagram.com/uvicwecs/" target="_blank">
+                    <img src="./img/new_Icons/igbw.png" alt="resume" style="width:95%;height:80%;"></a>
+                </td>
+                <td>
+                  <a href="https://discord.com/invite/ua2tRvByWr" target="_blank">
+                    <img src="./img/new_Icons/dpbw.png" alt="resume" style="width:95%;height:80%;"></a>
+                </td>
+                <td>
+                  <a href="mailto:uvictoriawecs@gmail.com" target="_blank">
+                    <img src="./img/lcons/email.png" alt="resume" style="width:95%;height:80%;"></a>
+                </td>
+              </tr>
+            </tbody>
+          </div>
+        </div>
+        <p>
+          <button onclick="view_more_less(dots2,more2, wecsBtn,wecs)" id="wecsBtn">View More</button>
+          <span id="dots2"></span><span id="more2">
+            <br><br><b>During the pandemic, a close friend and I rebooted a club at UVic called Women in Engineering and
+              Computer Science (WECS).</b> Since then, we have been hosting review sessions for 100 level STEM courses. I
+              have led review sessions for CSC 110, 115, and 111. In these review sessions, I help students debug code
+              in Java, Python, and C. WECS has been a great platform to practice leadership skills such as public
+              speaking, communications and learning how to explain complex concepts in simple ways. Furthermore,
+              creating review content and answering students’ questions have helped me get closer to mastering the
+              basics of computer science.
+          </span>
+        </p>
+      </div>
+      <!-- SPS -->
+      <div class="item" id="sps">
+        <div class="item_title">
+          <div class="title">Google SPS Program</div>
+          <div class="date"> Summer 2022</div>
+          <div class="description"> CSC 106</div>
+        </div>
+        <div class="middle_table">
+          <ul>
+            <li>Software Product Sprint</li>
+            <li>Meet like minded individual across North America</li>
+            <li>Check out the program and Where I found it</li>
+            <li>Here is what I built wth my team</li>
+      
+          </ul>
+          <div class="project_a">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://buildyourfuture.withgoogle.com/programs/softwareproductsprint" target="_blank">
+                    <img src="./img/lcons/download.png" alt="resume" style="width:95%;height:80%;"></a>
+                </td>
+                <td>
+                  <a href="https://dgallegosdupuis-sps-summer22.uw.r.appspot.com/" target="_blank">
+                    <img src="./img/lcons/linkedin.png" alt="resume" style="width:95%;height:80%;"></a>
+                </td>
+              </tr>
+            </tbody>
+          </div>
+        </div>
+        <p>
+          <button onclick="view_more_less(dots3,more3, spsBtn,sps)" id="spsBtn">View More</button>
+          <span id="dots3"></span><span id="more3"> <br><br>
+            <br><br><b>
+              https://buildyourfuture.withgoogle.com/programs/softwareproductsprint    </b>
+              Collaborate and build a Web App using Googles App Engine
+              Mentors and mock interview
+              This is an increible program to learn from professionals, learn how to learn, and work with Google Cloud Shell
+              need is the link to the thing we are making - Server
+            <br>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="social">
+      <tbody>
+        <tr>
+          <td>
+            <a href="#Travel">
+              <img src="img/new_Icons/scroll.png" alt="resume" style="width:95%;height:80%;"></a>
+          </td>
+      </tbody>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------  Travel --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="Travel">
+    <div class="intro">
+     <br><br>
+      <h1>Travel</h1>
+      <p> One of my favorite childhood games in Memeory, so I wanted to show places I have lived and 
+        visited thought my life and what they have taught me.
+      </p>
+    </div>
+      <div class="social">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./img/travel/mx1.jpg" alt="Avatar" style="width:240px;height:250px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Mexico City</h1> 
+              <p>My country of birth where my relatives live, Love Family, Vacation</p> 
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./img/travel/vic1.jpg" alt="Avatar" style="width:240px;height:250px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Victoria</h1> 
+              <p>aprieciate Nature, deepest frendships in the world, safe</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./img/travel/p1.jpg" alt="Avatar" style="width:240px;height:250px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Paris</h1> 
+              <p>Place in europe that I have spent the most amount of time, leacure time about not over indungence</p> 
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./img/travel/ny2.jpg" alt="Avatar" style="width:240px;height:250px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>New York</h1> 
+              <p>Desert is beutiful, that was there before the Dinosours</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="social">
+        <tbody>
+          <tr>
+            <td>
+              <a href="#Projects">
+                <img src="img/new_Icons/scroll.png" alt="resume" style="width:95%;height:80%;"></a>
+            </td>
+        </tbody>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------  Projects--------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="Projects">
+    <br><br>
+    <h1>Projects</h1>
+    <div class="social" class="content">
+      <!-- API -->
+      <div class="item" id="ical">
+        <div class="item_title">
+          <div class="title">API Project</div>
+          <div class="date">April 2022</div>
+          <div class="description">CSC 130</div>
+        </div>
+        <div class="middle_table">
+          <ul>
+            <li>Application Programable Interface: OMD</li>
+            <li>REST, User-input, jQuery,HTML, CSS</li>
+            <li>Javascript: Object Oriented Design </li>
+            <li>Check it out by clicking the first icon :)</li>
+          </ul>
+        </div>
+        <div class="project_a">
+          <tbody>
+            <tr>
+              <td>
+                <a href="./API/movie.html" target="_blank">
+                  <img src="./img/new_Icons/api.png" alt="resume" style="width:100%;height:100%;"></a>
+              </td>
+              <td>
+                <a href="https://github.com/danigallegdup?tab=repositories" target="_blank">
+                  <img src="./img/new_Icons/ghbw.png" alt="resume" style="width:95%;height:80%;"></a>
+              </td>
+              <td>
+                <a href="https://heat.csc.uvic.ca/coview/course/2020011/CSC130" target="_blank">
+                  <img src="./img/new_Icons/uvic.png  " alt="resume" style="width:95%;height:80%;"></a>
+              </td>
+            </tr>
+          </tbody>
+        </div>
+        <p>
+          <button onclick="view_more_less(dots4,more4, myBtn4,ical)" id="myBtn4">View More</button>
+          <span id="dots4"></span><span id="more4">
+            <br><br><b>Things that I am proud of about this project:</b><br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own <br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own
+            <br><br><b>Things I would like to improve when I have the time:</b><br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own <br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own <br><br>
+
+          </span>
+        </p>
+      </div>
+      <!-- Hop-ing Through History -->
+      <div class="item" id="nt">
+        <div class="item_title">
+          <div class="title">Hop-ing Through History</div>
+          <div class="date">May 2021</div>
+          <div class="description">Club UVic</div>
+        </div>
+        <div class="middle_table">
+          <ul>
+            <li>Working with a Brain-Computer Interface</li>
+            <li>Arduino Programming</li>
+            <li>NeuroTechX competition </li>
+            <li><a href="https://neurotechuvic.github.io/index.html" target="_blank">Website that we built</a></li>
+          </ul>
+          <div class="project_a">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="./Daniela's Resume.pdf" target="_blank">
+                    <img src="./img/new_Icons/hop.png" alt="resume" style="width:140%;height:140%;"></a>
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/in/daniela-gallegos-dupuis-243645205/" target="_blank">
+                    <img src="./img/new_Icons/dpbw.png" alt="resume" style="width:100%;height:100%;"></a>
+                </td>
+                <td>
+                  <a href="mailto:danigallegdup@gmail.com" target="_blank">
+                    <img src="./img/new_Icons/ytbw.png" alt="resume" style="width:100%;height:100%;"></a>
+                </td>
+              </tr>
+            </tbody>
+          </div>
+        </div>
+        <p>
+          <button onclick="view_more_less(dots5,more5, myBtn5,nt)" id="myBtn5">View More</button>
+          <span id="dots5"></span><span id="more5">
+            <br><br><b>Things that I am proud of about this project:</b><br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own <br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own
+            <br><br><b>Things I would like to improve when I have the time:</b><br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own <br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own
+            <br><br>
+          </span>
+        </p>
+      </div>
+      <!-- Smoooosh  -->
+      <div class="item" id="hth">
+        <div class="item_title">
+          <div class="title">Smoooosh</div>
+          <div class="date">August 2016</div>
+          <div class="description">Khan Academy</div>
+        </div>
+        <div class="middle_table">
+          <ul>
+            <li>First ever programing project</li>
+            <li>Bored on Summer and learned in Khan Academy</li>
+            <li>made al little js game</li>
+            <li>try it out: Khan course: PDF: favorite free Leagure learning resourses </li>
+          </ul>
+        </div>
+        <div class="project_a">
+          <tbody>
+            <tr>
+              <td>
+                <a href="./Daniela's Resume.pdf" target="_blank">
+                  <img src="./img/new_Icons/smoosh.png" alt="resume" style="width:95%;height:80%;"></a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/in/daniela-gallegos-dupuis-243645205/" target="_blank">
+                  <img src="./img/new_Icons/igbw.png" alt="resume" style="width:95%;height:80%;"></a>
+              </td>
+              <td>
+                <a href="mailto:danigallegdup@gmail.com" target="_blank">
+                  <img src="./img/lcons/email.png" alt="resume" style="width:95%;height:80%;"></a>
+              </td>
+            </tr>
+          </tbody>
+        </div>
+        <p>
+          <button onclick="view_more_less(dots6,more6, myBtn6,hth)" id="myBtn6">View More</button>
+          <span id="dots6"></span><span id="more6"> <br><br>
+            <br><br><b>Things that I am proud of about this project:</b><br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own <br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own
+            <br><br><b>Things I would like to improve when I have the time:</b><br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own <br>
+            - First time every using an API to exctract external data <br>
+            - First time working with JS on my own
+            <br><br>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="social">
+      <tbody>
+        <tr>
+          <td>
+            <a href="#Favorite_Things">
+              <img src="img/new_Icons/scroll.png" alt="resume" style="width:95%;height:80%;"></a>
+          </td>
+      </tbody>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------  Favorite_Things --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="Favorite_Things">
+    <div class="intro">
+      <br><br>
+      <h1>Current Goals</h1>
+      <p>Join me, what I stand for, contact me about x idk .....
+        Things I learned or Skills it rienforced:
+        - First time every using an API to exctract external data
+        - First time working with JS on my own
+        - First time every using an API to exctract external data
+        - First time working with JS on my own
+      </p> 
+    </div>
+    <br><br><br>
+    <div class="container">
+      <div class="cardsa">
+        <div class="carda card-one">
+          <h2 class="card-title">Card One</h2>
+          <p class="date">May 25, 2021</p>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias ut veniam?</p>
+        </div>
+        
+        <div class="carda card-two">
+          <h2 class="carda-title">Card Two</h2>
+          <p class="date">May 26, 2021</p>
+          <p class="description">If you read carefully, you'll find that this is not your typical lorem ipsum.</p>
+        </div>
+        
+        <div class="carda card-three">
+          <h2 class="carda-title">Card Three</h2>
+          <p class="date">May 27, 2021</p>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias ut veniam?</p>
+        </div>
+        
+        <div class="carda card-four">
+          <h2 class="carda-title">Card Four</h2>
+          <p class="date">May 28, 2021</p>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias ut veniam?</p>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+      <div class="social">
+        <tbody>
+          <tr>
+            <td>
+              <a href="#Interested">
+                <img src="img/new_Icons/scroll.png" alt="resume" style="width:95%;height:80%;"></a>
+            </td>
+        </tbody>
+      </div>
+      <br><br><br><br>
+    
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------  Interested --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="Interested">
+    <section class="info">
+      <h1>Now that you have made it to the end, are you interested....</h1>
+    </section>
+    <section class="cards-wrapper">
+      <div class="card-grid-space">
+        <div class="num">01</div>
+        <a class="card" href="" 
+        style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+          <div>
+            <h1>Will you be my Mentor?</h1>
+            <p>Can you help me achieve my Goals?</p>
+            <div class="date">6 Oct 2017</div>
+            <div class="tags">
+              <div class="tag">Form</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card-grid-space">
+        <div class="num">02</div>
+        <a class="card" href="" 
+        style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+          <div>
+            <h1>Want to collaborate and build something together?</h1>
+            <p>Learn about some of the most common HTML tags…</p>
+            <div class="date">9 Oct 2017</div>
+            <div class="tags">
+              <div class="tag">Form</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card-grid-space">
+        <div class="num">03</div>
+        <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/"
+         style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+          <div>
+            <h1>Connect, Ask Me a Question or Give ananymous FeedBack </h1>
+            <p>Learn how to use links and images along with file paths…</p>
+            <div class="date">14 Oct 2017</div>
+            <div class="tags">
+              <div class="tag">Form</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <div class="social">
+      <tbody>
+        <tr>
+          <td>
+            <a href="./Daniela's Resume.pdf" target="_blank">
+              <img src="img/lcons/download.png" alt="resume" style="width:95%;height:80%;"></a>
+          </td>
+          <td>
+            <a href="https://www.linkedin.com/in/daniela-gallegos-dupuis-243645205/" target="_blank">
+              <img src="img/lcons/linkedin.png" alt="resume" style="width:95%;height:80%;"></a>
+          </td>
+          <td>
+            <a href="mailto:danigallegdup@gmail.com" target="_blank">
+              <img src="img/lcons/email.png" alt="resume" style="width:95%;height:80%;"></a>
+          </td>
+          <td>
+            <a href="mailto:danigallegdup@gmail.com" target="_blank">
+              <img src="img/lcons/email.png" alt="resume" style="width:95%;height:80%;"></a>
+          </td>
+          <td>
+            <a href="mailto:danigallegdup@gmail.com" target="_blank">
+              <img src="img/lcons/email.png" alt="resume" style="width:95%;height:80%;"></a>
+          </td>
+        </tr>
+      </tbody>
+    </div>
+    <div class="social">
+      <tbody>
+        <tr>
+          <td>
+            <a href="#Dream">
+              <img src="img/new_Icons/scroll.png" alt="resume" style="width:95%;height:80%;"></a>
+          </td>
+      </tbody>
+    </div>
+    <br><br>
+  </div>
+</body>
+<!-- BODY ENDS -->
+
+</html>
+<!-- index.html ENDS -->
