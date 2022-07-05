@@ -1,6 +1,9 @@
 # Google Software Product Sprint
 
-This repo contains the projects you'll work on throughout SPS.
+
+This repo contains Dani's portfolio and SPS projects."
+Dani modified in Step 11
+
 
 To get started:
 
@@ -10,3 +13,4 @@ To get started:
   - If the tutorial panel does not open or display the walkthrough contents, try refreshing the page.
 
 Then follow the on-screen instructions to set up your repo.
+My file -first push

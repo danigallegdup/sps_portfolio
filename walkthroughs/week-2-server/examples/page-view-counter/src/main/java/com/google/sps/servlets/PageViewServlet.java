@@ -12,6 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+/*this code does the following: 
+1: count number of times the page has been loaded 
+2: objects http.servelt, Rquest and Responce p. 
+ */
+
 package com.google.sps.servlets;
 
 import java.io.IOException;
@@ -21,7 +26,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /** Servlet that returns HTML that contains the page view count. */
-@WebServlet("/page-views")
+@WebServlet("/mypage.html")
 public class PageViewServlet extends HttpServlet {
 
   private int pageViews = 0;

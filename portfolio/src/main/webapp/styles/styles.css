@@ -1,0 +1,322 @@
+/*general rules*/
+
+html {scroll-behavior: smooth;}
+
+body {
+	background-image: linear-gradient(to bottom right ,#005493,#c63527);
+	margin: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p, h3 {
+	margin-left: 5%;
+}
+h3, h2, h5, h1{
+	color: white;
+	text-align: center
+}
+
+/*Home Page -  introduction*/
+
+#HOME_PAGE h1{
+	padding: 1%;
+	font-size:45px;
+}
+
+.typewriter h1 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid rgb(255, 0, 170); /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(40, end),
+	  blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 80% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	100% { border-color:rgb(255, 0, 170); }
+  }
+
+/*intro*/
+.intro h2, p{
+	color: white;
+	text-align: center;
+}
+.intro p{
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: left;
+}
+/*hero image*/
+.hero-image {
+<<<<<<< HEAD
+	background-image: url(../img/picasso.png);
+=======
+	background-image: url(../img/Dream/new.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+>>>>>>> 491899eb97729faff6097efafc43c75b9d9f064a
+  }
+.profile{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;
+}
+.profile img{
+	margin-top: 1%;
+	margin-bottom: 1%;
+	width:12%;
+	height:12%;
+}
+
+/*ask for action: many of these sooo */
+<<<<<<< HEAD
+#HOME_PAGE .social{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;	
+	padding-top: 1%;
+}
+
+#HOME_PAGE .social a{
+	width:100px;
+	height:100px;
+}
+
+#HOME_PAGE .social a:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2); 
+  }
+=======
+
+>>>>>>> 491899eb97729faff6097efafc43c75b9d9f064a
+
+  /*Beginning of Portfolio */
+#Portfolio{
+	background-image: url(../img/project.png);
+	margin: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Portfolio h1{
+	padding: 1%;
+	text-align: center;
+	font-size:45px;
+}
+
+<<<<<<< HEAD
+=======
+#Dream .social{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;	
+}
+
+>>>>>>> 491899eb97729faff6097efafc43c75b9d9f064a
+
+.social{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;	
+<<<<<<< HEAD
+	padding-top: 1%;
+}
+
+.social a{
+	width:5%;
+	height:5%;
+=======
+	padding-top: 15px;
+}
+
+.social a{
+	width:100px;
+	height:100px;
+>>>>>>> 491899eb97729faff6097efafc43c75b9d9f064a
+	padding-left: 1%;
+}
+
+.social a:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2); 
+  }
+
+.project_a{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:flex-start;	
+	margin-left: 10%;
+}
+
+.project_a a{
+	width:10%;
+	height:10%;
+	padding-left: 0%;
+}
+.project_a a:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2); 
+  }
+
+  #myBtn9,#myBtn8,#myBtn7,#myBtn6,#myBtn5,#myBtn4,#spsBtn, #wecsBtn, #seBtn{
+	width: 95%;
+	border: 1px solid black;
+	border-radius: 25px;
+	color: white;
+	
+  }
+
+#se {border: 5px solid #009e4d;}
+#se .item_title {background-color:#009e4d;}
+#seBtn { background-color:#009e4d;
+	border: 2px solid #009e4d;}
+
+#wecs {border: 5px solid #ae115ada;}
+#wecs .item_title{ background-color:#ae115ac7;}
+#wecsBtn { background-color:#ae115aa5;
+	border: 2px solid #ae115a3e;}
+
+#sps {border: 5px solid #c20434d3;}
+#sps .item_title{ background-color:#c20434d3;}
+#spsBtn { background-color:#c20434d3;
+	border: 2px solid#c2043449;;}
+
+#ical {border: 5px solid #8e4162d3;}
+#ical .item_title{background-color:#8e4162d3;}
+#myBtn4 { background-color:#8e4162d3;
+	border: 2px solid #c2043449;;}
+
+#nt {border: 5px solid #c2049673;}
+#nt .item_title{background-color:#c2049673; } 
+#myBtn5 { background-color:#c2049673;
+	border: 2px solid #c2043449;}
+
+#hth {border: 5px solid #7c1f1fd3;}
+#hth .item_title{background-color:#7c1f1fd3;} 
+#myBtn6 {background-color:#7c1f1fd3;
+	border: 2px solid #c2043449;}      
+
+#mc {border: 5px solid #bf9acad3;}
+#mc .item_title{background-color:#bf9acad3;}  
+#myBtn7 { background-color:#bf9acad3;
+	border: 2px solid#c2043449;}       
+        
+#math{border: 5px solid #905164d3;}
+#math .item_title{background-color:#905164d3;}   
+#myBtn8 { background-color:#905164d3;
+	border: 2px solid #c204343d;}      
+
+#smoosh {border: 5px solid #e08963d3;}
+#smoosh .item_title{background-color:#e08963d3;}        
+#myBtn9 { background-color:#e08963d3;
+	border: 2px solid #c2043449;} 
+
+
+.item{
+  background-color:	#ffffffc1;;
+  color:#002754;
+  border-radius: 25px;
+  width: 400px;
+  margin: 10px;
+}
+
+.item:hover {
+	-ms-transform: scale(1.05); /* IE 9 */
+	-webkit-transform: scale(1.05); /* Safari 3-8 */
+	transform: scale(1.05); 
+  }
+
+.item1{
+	background-color: rgb(8, 8, 34);
+	border: 5px solid black;
+	border-radius: 25px;
+	width: 20%;
+	padding: 10px;
+	margin: 10px;
+  }
+.index_item{
+	background-color: rgb(8, 8, 34);
+	border: 5px solid black;
+	border-radius: 25px;
+	width: 65%;
+	padding: 10px;
+	margin: 10px;
+	
+  }
+
+#more,#more2, #more3 ,#more4 ,#more5, #more6, #more7, #more8 ,#more9{display: none; }
+#more,#more2, #more3 ,#more4 ,#more5, #more6, #more7, #more8 ,#more9 .project_a {display: none; }
+
+
+  .index_item p {
+	color:white;
+	background-color: #002754A5;
+	text-align: center;
+  }
+
+
+.item p, a, h3,h4{
+	text-align:left;
+	color: #002754;
+	margin-right: 2%;
+	}
+
+
+.item_title{
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	padding:5px ;
+	border-radius: 25px;
+}
+
+.title{
+	font-weight: bold;
+}
+.date{
+	font-size:75%;
+}
+.description{
+	font-size:75%;
+}
+
+.middle_table{
+	font-size:85%;
+}
+
+#Projects{
+	background-image: url(../img/pic.png);
+	margin: 0px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#Projects h1{
+	padding: 1%;
+	text-align: center;
+	font-size:45px;
+}
+
+/* */
+
+
+/*add to this after */
+@media all and (max-width: 800px) {
+	h3 { text-align: center }
+	p{text-align: left;}
+}
