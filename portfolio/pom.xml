@@ -54,9 +54,6 @@
       <version>1.113.0</version>
     </dependency>
   </dependencies>
-
- 
-
   <build>
     <plugins>
       <!-- Copy static resources like html files into the output jar file. -->
