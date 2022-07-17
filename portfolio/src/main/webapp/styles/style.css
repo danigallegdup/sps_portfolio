@@ -1,13 +1,26 @@
 
 
 #greeting-container {
-  margin-top: 10px;
-  margin-left: 40%;
+  margin-top: 1%;
+  font-size: large;
+}
+
+.main_part{
+  text-align: center;
+}
+
+.practice{
+  margin-top: 80%;
+  background-color: rosybrown;
+  text-align: center;
+
+
 }
 
 button{
-  background-color: blueviolet;
-  border: 5px solid blueviolet ;
-  margin-left: 40%;
+  background-color: rgba(137, 43, 226, 0.43);
+  padding: 1%;
+  border: 1px solid rgba(137, 43, 226, 0.43);
+  margin-top: 1%;
 }
 
