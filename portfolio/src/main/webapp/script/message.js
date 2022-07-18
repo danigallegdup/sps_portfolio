@@ -49,3 +49,18 @@ async function showServerMessage() {
     dateContainer.innerText = textFromResponse;
   }
   
+
+  function addRandomMessage() {
+    const responseFromServer = await fetch('/server-stats');
+    // The json() function returns an object that contains fields that we can
+    // reference to create HTML.
+    const stats = await responseFromServer.json();
+  
+    const greetings =
+        [stats.startTime, stats.currentTime, stats.maxMemory, stats.usedMemory];
+    // Pick a random greeting.
+    const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+    // Add it to the page.
+    const greetingContainer = document.getElementById('greeting-container');
+    greetingContainer.innerText = greeting;
+  }

@@ -65,6 +65,8 @@ html {scroll-behavior: smooth;}
 }
 
 .square3_1{
+    border: 1px solid whitesmoke ;
+    border-radius: 10%;
     background-color:rgba(216, 191, 216, 0.812);
     grid-column-start: 1;
     grid-column-end: 2;
@@ -72,6 +74,9 @@ html {scroll-behavior: smooth;}
     grid-row-end: 4;
 }
 .square3_2{
+    border: 1px solid whitesmoke ;
+    border-radius: 10%;
+    color: grey;
     background-color:rgba(255, 218, 185, 0.807);
     grid-column-start: 2;
     grid-column-end: 3;
@@ -80,6 +85,8 @@ html {scroll-behavior: smooth;}
 }
 
 .square3_3{
+    border: 1px solid whitesmoke ;
+    border-radius: 10%;
     background-color: rgba(32, 178, 171, 0.809);
     grid-column-start: 3;
     grid-column-end: 4;
