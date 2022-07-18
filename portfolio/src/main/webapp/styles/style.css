@@ -9,15 +9,12 @@
   text-align: center;
 }
 
-.practice{
-  margin-top: 80%;
-  background-color: rosybrown;
-  text-align: center;
-
-
+#darker{
+    color: grey;
+    padding :2%;
 }
 
-input, button{
+ button{
   background-color: rgba(137, 43, 226, 0.43);
   padding: 1%;
   border: 1px solid rgba(137, 43, 226, 0.43);

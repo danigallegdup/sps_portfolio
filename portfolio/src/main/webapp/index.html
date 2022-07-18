@@ -23,32 +23,40 @@
                             <div id="greeting-container"></div>
                         </div>
                         <div class="square3_2">
-                            <h1>Connect With me Form</h1>
+                            <h2>Connect With me Form</h2>
                             <p>This is a form that sends a POST request to the server:</p>
                             <form action="/form-handler" method="POST">
-                                <input type="text" name="name-input" placeholder="Your Name" />
+                                <input  id= "darker" type="text" name="name-input" placeholder="Your Name" />
                                 <br /><br />
-                                <input type="text" name="email-input" placeholder="example@gmail.com" />
+                                <input  id= "darker"  type="text" name="email-input" placeholder="example@gmail.com" />
                                 <br /><br />
-                                <select name="role-input">
+                                <select  id= "darker"  name="role-input">
                                     <option value="grey">Pick one</option>
                                     <option value="Mentor">Mentor</option>
                                     <option value="Collaborate">Collaborate</option>
                                     <option value="Coffee Chat">Coffee chat</option>
                                 </select>
                                 <br /><br />
-                                <textarea name="description-input" placeholder="Your Description"></textarea>
+                                <textarea name="description-input"  id= "darker"  placeholder="Your Description"></textarea>
                                 <br /><br />
-                                <input type="submit" />
+                                <input id= "darker" type="submit" />
                             </form>
                             <br><br>
                         </div>
                         <div class="square3_3">
                             <h1>Img Cloud</h1>
-                            <a href="../hello-world/src/main/webapp/index.html">HERE</a>
+                            <p>Type a message and click submit:</p>
+                            <form action="/upload" method="POST" enctype="multipart/form-data">
+                              <p>Type some text:</p>
+                              <textarea id= "darker" name="message"></textarea>
+                              <br/><br/> 
+                              <p>Upload an image:</p>
+                              <input type="file" name="image">
+                              <br/><br/>   
+                              <button>Submit</button>
+                            </form>
+                            <p><a href="/list-images">see all of the uploaded images!</a></p>
                         </div>
-
-
                     </div>
                 </div>
             </div>

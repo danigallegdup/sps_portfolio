@@ -53,11 +53,11 @@ html {scroll-behavior: smooth;}
  
     text-align: center;
     display: grid;
-    grid-template-columns:24vw  24vw  24vw;
+    grid-template-columns:24vw  12vw 12vw  25vw;
                       /*  1    2     3    */
-    grid-template-rows:   20vh 20vh  20vh ;
+    grid-template-rows:   20vh 30vh  20vh ;
                       /*  1    2    3    */
-    gap: 1vw 10vh;
+    gap:2vw 2vh;
     padding: 3vw 1vh;
 }
 
@@ -67,22 +67,22 @@ html {scroll-behavior: smooth;}
 
 .square3_1{
     border: 1px solid whitesmoke ;
-    border-radius: 10%;
+    border-radius: 2%;
     background-color:rgba(216, 191, 216, 0.812);
     grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-column-end: 5;
+    grid-row-start: 0;
+    grid-row-end: 1;
 }
 .square3_2{
     border: 1px solid whitesmoke ;
     border-radius: 10%;
     color: grey;
-    background-color:rgba(255, 185, 232, 0.807);
-    grid-column-start: 2;
+    background-color: rgba(188, 143, 143, 0.788);
+    grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
 }
 
 .square3_3{
@@ -90,45 +90,9 @@ html {scroll-behavior: smooth;}
     border-radius: 10%;
     background-color: rgba(32, 178, 171, 0.809);
     grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 4;
-}
-
-/*add to this after */
-@media all and (max-width: 800px) {
-	.grid-sqr3s {
-        display: grid;
-        grid-template-columns:27vw  27vw  27vw;
-                          /*  1    2     3    */
-        grid-template-rows:   20vh 20vh  20vh ;
-                          /*  1    2    3    */
-        gap: 2vw 1vh;
-        padding: 2vw 1vh;
-    }
-
-
-.square3_1{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.square3_2{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
     grid-row-end: 3;
-}
-
-.square3_3{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-
 }
 
 
