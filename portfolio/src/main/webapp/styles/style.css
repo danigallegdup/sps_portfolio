@@ -1,13 +1,23 @@
 
 
 #greeting-container {
-  margin-top: 10px;
-  margin-left: 40%;
+  margin-top: 1%;
+  font-size: large;
 }
 
-button{
-  background-color: blueviolet;
-  border: 5px solid blueviolet ;
-  margin-left: 40%;
+.main_part{
+  text-align: center;
+}
+
+#darker{
+    color: grey;
+    padding :2%;
+}
+
+ button{
+  background-color: rgba(137, 43, 226, 0.43);
+  padding: 1%;
+  border: 1px solid rgba(137, 43, 226, 0.43);
+  margin-top: 1%;
 }
 
