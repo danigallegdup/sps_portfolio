@@ -50,7 +50,7 @@ async function showServerMessage() {
   }
   
 
-  function addRandomMessage() {
+  async function addRandomMessage() {
     const responseFromServer = await fetch('/server-stats');
     // The json() function returns an object that contains fields that we can
     // reference to create HTML.

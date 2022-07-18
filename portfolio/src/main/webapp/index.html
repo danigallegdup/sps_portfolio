@@ -19,29 +19,36 @@
                     <div class="grid-sqr3s">
                         <div class="square3_1">
                             <h1>Server Message</h1>
-                            <a href="../server-stats/src/main/webapp/index.html">HERE</a><br>
                             <button onclick="addRandomMessage()">Things I have learned</button>
                             <div id="greeting-container"></div>
-                            <div class="practice">
-                                <button onclick="showServerHi();">servlet message</button>
-                                <h2 id="hello-container"></h2 />
-                                <button onclick="showServerTime();">Get date</button>
-                                <h2 id="date-container"></h2>
-                                <p>Click <a href="/hello">Hello servlet</a></p>
-                                <p>Click <a href="/date">date servles</a></p>
-                            </div>
                         </div>
                         <div class="square3_2">
                             <h1>Form</h1>
-                            <a href="../form-submission /src/main/webapp/index.html">HERE</a>
+                            <h1>Connect With me Form</h1>
+
+    <p>This is a form that sends a POST request to the server:</p>
+    <form action="/form-handler" method="POST">
+
+      <input type="text" name="name-input" placeholder="Your Name"/>
+      <br/><br/>
+
+      <input type="text" name="email-input" placeholder="example@gmail.com"/>
+      <br/><br/>
+
+      <select name="role-input">
+        <option value="grey">Pick one</option> 
+        <option value="Mentor">Mentor</option>
+        <option value="Collaborate">Collaborate</option>
+        <option value="Coffee Chat">Coffee chat</option>
+      </select>
+      <br/><br/>
+
+      <textarea name="description-input" placeholder="Your Description"></textarea>
+      <br/><br/>
+
+      <input type="submit"/>
+    </form>
                             <br><br>
-                            <h1>Week 2 assignment 3</h1>
-                            <p>modified example server-stats</p>
-                            <button onclick="getServerStats()">Fetch Messages</button>
-                            <ul id="server-stats-container"></ul>
-                            <p>Click <a href="/server-stats">here</a> to see the server response directly.</p>
-                            <button onclick="showServerMessage()">may I see Json</button>
-                            <p id="message-container"></p>
                         </div>
                         <div class="square3_3">
                             <h1>Img Cloud</h1>
