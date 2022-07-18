@@ -17,7 +17,7 @@
 
 }
 
-button{
+input, button{
   background-color: rgba(137, 43, 226, 0.43);
   padding: 1%;
   border: 1px solid rgba(137, 43, 226, 0.43);
