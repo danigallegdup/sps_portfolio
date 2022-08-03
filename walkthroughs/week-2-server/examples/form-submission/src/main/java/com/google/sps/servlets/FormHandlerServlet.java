@@ -39,7 +39,7 @@ public class FormHandlerServlet extends HttpServlet {
     // Write the input to the response so the user can see it.
     response.setContentType("text/html;");
     response.getWriter().println("<p>Name: " + name + "</p>");
-    response.getWriter().println("<p>Name: " + email + "</p>");
+    response.getWriter().println("<p>Email: " + email + "</p>");
     response.getWriter().println("<p>Role: " + role + "</p>");
     response.getWriter().println("<p>Description: " + description + "</p>");
   }
