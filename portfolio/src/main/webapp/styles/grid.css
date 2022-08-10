@@ -19,6 +19,12 @@ html {scroll-behavior: smooth;}
     margin-right: 3vw;
 }
 
+.felx_rows{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 #P1 {
     background-image: url("../img/star.png");
     background-repeat: no-repeat;
