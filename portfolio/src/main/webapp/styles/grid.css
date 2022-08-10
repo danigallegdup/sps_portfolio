@@ -30,7 +30,11 @@ html {scroll-behavior: smooth;}
 }
 
 #P2 {
+<<<<<<< HEAD
     background-image: url("../img/Dream/new.png");
+=======
+    background-image: url("../img/project.png");
+>>>>>>> d04674fc6f47aec3af6f14d961295ea2acd68b10
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 110vh;
