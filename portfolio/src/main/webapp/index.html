@@ -1,68 +1,214 @@
 <!DOCTYPE html>
+<html lang="en">
+<!-- HEAD STARTS -->
 
 <head>
-    <meta charset="UTF-8">
-    <title>Dani SPS 2022</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/gridsps.css">
-    <script src="./script/script.js"></script>
-    <script src="./script/message.js"></script>
+  <title>Dani's Google SPS Portfolio</title>
+  <!-- META STARTS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Google Software Product Sprint 2022">
+  <meta property="og:type" content="website">
+  <!-- META ENDS -->
+  <!-- FAVICON -->
+  <link rel="icon" href="./img/logo.png">
+  <!-- STYLES BEGIN -->
+  <link rel="stylesheet" href="./styles/grid.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/interested.css">
+
+
+  <script src="script/message.js"></script>
+  <script src="script/script.js"></script>
+  <!-- Interested -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Dreams -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
+<!-- HEAD ENDS -->
 
 <body>
-    <div id="Week1">
-        <div class="content">
-            <div class="grid-container">
-                <div class="main_part">
-                    <h1>Dani's Software Product Sprint Portfolio 2022</h1>
-                    <div>this it the MVP for SPS Portfolio</div>
-                    <div class="grid-sqr3s">
-                        <div class="square3_1">
-                            <h1>Server Message</h1>
-                            <button onclick="addRandomMessage()">Things I have learned</button>
-                            <div id="greeting-container"></div>
-                        </div>
-                        <div class="square3_2">
-                            <h2>Connect With me Form</h2>
-                            <p>This is a form that sends a POST request to the server:</p>
-                            <form action="/form-handler" method="POST">
-                                <input  id= "darker" type="text" name="name-input" placeholder="Your Name" />
-                                <br /><br />
-                                <input  id= "darker"  type="text" name="email-input" placeholder="example@gmail.com" />
-                                <br /><br />
-                                <select  id= "darker"  name="role-input">
-                                    <option value="grey">Pick one</option>
-                                    <option value="Mentor">Mentor</option>
-                                    <option value="Collaborate">Collaborate</option>
-                                    <option value="Coffee Chat">Coffee chat</option>
-                                </select>
-                                <br /><br />
-                                <textarea name="description-input"  id= "darker"  placeholder="Your Description"></textarea>
-                                <br /><br />
-                                <input id= "darker" type="submit" />
-                            </form>
-                            <br><br>
-                        </div>
-                        <div class="square3_3">
-                            <h1>Img Cloud</h1>
-                            <p>Type a message and click submit:</p>
-                            <form action="/upload" method="POST" enctype="multipart/form-data">
-                              <p>Type some text:</p>
-                              <textarea id= "darker" name="message"></textarea>
-                              <br/><br/> 
-                              <p>Upload an image:</p>
-                              <input type="file" name="image">
-                              <br/><br/>   
-                              <button>Submit</button>
-                            </form>
-                            <p><a href="/list-images">see all of the uploaded images!</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Introduction to Google SPS ------------------------------------------------------------------------>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="P3">
+    <div class="content">
+      <div class="grid-container">
+        <div class="main_part">
+          <div class="profile">
+            <img src="./img/professional.png" alt="" class="center">
+          </div>
+          <h1>Software Product Sprint</h1>
+          <p class="intro">
+            I pariticated in Google Software Product Sprint Summmer 2022. This part-time Summmer Program
+            is an amazing opportunity for any Software or Computer Science Student.
+            Technical Skills, Team Skills, Interview Skills, Stress and Time managment Skills.
+            Toolset and one big overall message: "You Can Do This"
+          </p>
+          <div class="social">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="./Daniela's Resume.pdf" target="_blank">
+                    <img src="img/lcons/download.png" alt="Full Review" ></a>
+                </td>
+                <td>
+                  <a href="https://www.linkedin.com/in/daniela-gallegos-dupuis-243645205/" target="_blank">
+                    <img src="img/lcons/linkedin.png" alt="Apply" ></a>
+                </td>
+                <td>
+                  <a href="mailto:danigallegdup@gmail.com" target="_blank">
+                    <img src="img/lcons/email.png" alt="" ></a>
+                </td>
+              </tr>
+            </tbody>
+          </div>
         </div>
+        <div class="scroll">
+          <a href="#P2">
+            <img src="img/new_Icons/scroll2.png" alt="resume"></a>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------  My Dream is X use tech as my superpower ---------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="P2">
+    <div class="content">
+      <div class="grid-container">
+        <div class="main_part">
+          <h1>In 11 Weeks</h1>
+          <div class="grid-sqr3s">
+            <section class="cards-wrapper">
+              <div class="card-grid-space">
+                <div class="num">01</div>
+                <a class="card" href="" style="--bg-img: url('./img/Dream/helpWorld.png')">
+                  <div>
+                    <h1>Created a Portfolio</h1>
+                    <div class="tags">
+                      <div class="tag">Google Libraries</div>
+                      <div class="tag">Google Cloud</div>
+                      <div class="tag">Servelts</div>
+                      <div class="tag">Learning</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">02</div>
+                <a class="card" href=""
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+                  <div>
+                    <h1>Team Project</h1>
+                    <div class="tags">
+                      <div class="tag">Universiy Event Engine</div>
+                      <div class="tag">Google Maps API</div>
+                      <div class="tag">Google Database</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">03</div>
+                <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/"
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+                  <div>
+                    <h1>Interview Prep</h1>
+                    <div class="tags">
+                      <div class="tag">Algorthms</div>
+                      <div class="tag">Communication Skills</div>
+                      <div class="tag">Coding in Google Doc</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">04</div>
+                <a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/"
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+                  <div>
+                    <h1>Insightful WorkShops</h1>
+                    <div class="tags">
+                      <div class="tag">Who do you build for</div>
+                      <div class="tag">imposter Syndrome</div>
+                      <div class="tag">You Rock</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="scroll">
+          <a href="#P4">
+            <img src="img/new_Icons/scroll2.png" alt="move"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Portfolio  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="P4">
+    <div class="content">
+      <div class="grid-container">
+        <div class="main_part">
+          <h1>MVP for SPS Portfolio</h1>
+          <div class="grid-sqr3s">
+            <div class="square3_1">
+              <h1>Server Message</h1>
+              <button onclick="addRandomMessage()">Things I have learned</button>
+              <div id="greeting-container"></div>
+            </div>
+            <div class="square3_2">
+              <h2>Connect With me Form</h2>
+              <p>This is a form that sends a POST request to the server:</p>
+              <form action="/form-handler" method="POST">
+                <input id="darker" type="text" name="name-input" placeholder="Your Name" />
+                <br /><br />
+                <input id="darker" type="text" name="email-input" placeholder="example@gmail.com" />
+                <br /><br />
+                <select id="darker" name="role-input">
+                  <option value="grey">Pick one</option>
+                  <option value="Mentor">Mentor</option>
+                  <option value="Collaborate">Collaborate</option>
+                  <option value="Coffee Chat">Coffee chat</option>
+                </select>
+                <br /><br />
+                <textarea name="description-input" id="darker" placeholder="Your Description"></textarea>
+                <br /><br />
+                <input id="darker" type="submit" />
+              </form>
+              <br><br>
+            </div>
+            <div class="square3_3">
+              <h1>Img Cloud</h1>
+              <p>Type a message and click submit:</p>
+              <form action="/upload" method="POST" enctype="multipart/form-data">
+                <p>Type some text:</p>
+                <textarea id="darker" name="message"></textarea>
+                <br /><br />
+                <p>Upload an image:</p>
+                <input type="file" name="image">
+                <br /><br />
+                <button>Submit</button>
+              </form>
+              <p><a href="/list-images">see all of the uploaded images!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="scroll">
+          <a href="#P3">
+            <img src="img/new_Icons/up.png" alt="resume"></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
