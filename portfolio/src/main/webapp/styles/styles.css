@@ -4,6 +4,9 @@ h3, h2, h5, h1{
 	text-align: center
 }
 
+.name{
+	color: rgb(209, 158, 125);
+}
 
 #greeting-container {
 	margin-top: 1%;

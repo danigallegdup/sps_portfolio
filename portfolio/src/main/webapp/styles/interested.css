@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
 
 :root {
-  --color: #3c3163;
+  --color: #cf618d;
   --transition-time: 0.7s;
 }
 
@@ -32,7 +32,7 @@ a {
 .card {
   font-family: 'Heebo';
   --bg-filter-opacity: 0.5;
-  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
+  background-image: linear-gradient(rgba(222, 148, 103),rgba(188, 143, 143, 0.922) );
   height: 29vh;
   width: 42vw;
   font-size: 1em;
@@ -74,7 +74,7 @@ a {
 
 .card .tags .tag {
   font-size: 0.75em;
-  background: rgba(255,255,255,0.5);
+  background: rgba(9, 23, 62, 0.701);
   border-radius: 0.3rem;
   padding: 0 0.5em;
   margin-right: 0.5em;
@@ -117,7 +117,7 @@ a {
 }
 
 .card:after {
-  background: #3c3163;
+  background: rgba(71, 113, 111, 0.909);
   width: 200%;
   height: 200%;
 }
