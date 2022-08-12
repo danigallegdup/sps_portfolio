@@ -32,7 +32,7 @@ public final class ServerStatsServlet extends HttpServlet {
     // Calculate server stats
 
     // Convert the server stats to JSON
-    ServerStats serverStats = new ServerStats("Hello", "Hola", "bueno_intente", "Otro");
+    ServerStats serverStats = new ServerStats("Start Small", "Keep Building", "People want you to Succeed", "Be have the ability to be a change agent");
     String json = convertToJson(serverStats);
 
     // Send the JSON as the response
