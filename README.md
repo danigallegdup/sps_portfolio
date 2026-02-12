@@ -35,7 +35,7 @@ Here's what you’ll find inside:
 ├── setup-pre-commit.bash     # Script to set up pre-commit hooks
 ```
 
-## 💻 Getting Started
+## Getting Started
 
 ### **Why Start Here?**
 This repository is a launchpad for anyone interested in modern software engineering. It offers everything you need to:
