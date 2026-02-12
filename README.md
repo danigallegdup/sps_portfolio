@@ -1,15 +1,15 @@
-# SPS Portfolio ⭐
+# SPS Portfolio 
 
 Welcome to my  **SPS Portfolio** repository! 🚀 This repository showcases my projects and contributions as part of the **Google Software Product Sprint (SPS)** and beyond. It emphasizes impactful, scalable, and innovative software solutions designed to inspire and drive collaboration. Whether you're here to explore, learn, or contribute, this repository has something meaningful for everyone.
 
-## 🌟 Highlights
+##  Highlights
 
 - **Pre-commit Configuration**: Ensures high-quality code contributions with built-in linting and formatting tools.
 - **Walkthroughs**: Step-by-step guidance for navigating, understanding, and building on the portfolio projects.
 - **Portfolio Projects**: A curated collection of full-stack projects that demonstrate expertise in software engineering and innovation.
 - **Community Contributions**: Open to feedback, ideas, and improvements—your collaboration drives growth!
 
-## 🚀 Features
+## Features
 
 - **Comprehensive Project Demos**:  
   Dive into in-depth walkthroughs and project documentation showcasing backend integration, UI design, and database functionality.  
@@ -19,7 +19,7 @@ Welcome to my  **SPS Portfolio** repository! 🚀 This repository showcases my p
   Includes pre-commit hooks and scripts to help you get started with minimal hassle.  
 
 
-## 📂 Repository Structure
+##  Repository Structure
 
 Here's what you’ll find inside:
 
@@ -88,7 +88,7 @@ git push origin main
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are always welcome! Follow these steps:
 
